@@ -12,11 +12,13 @@ function christmassifyName() {
   
   if (greeting.classList.contains("christmassified")) {
       christmassifierBtn.textContent = "De-christmassify";
+      christmassifierBtn.style.opacity = "0.9";
       document.body.style.backgroundColor = "var(--black)";
       document.body.style.backgroundImage = "url(http://www.animationsoftware7.com/img/agifs/snow01.gif)";
+      document.body.style.backgroundSize = "cover";
       container.style.backgroundImage = "url('christmas.png')";
-      container.style.backgroundPosition = "left top";
-      container.style.minHeight = "67vh";
+      container.style.backgroundSize = "100% 100%";
+      container.style.minHeight = "62vh";
       greeting.style.opacity = "0";
       greeting.style.marginBottom = "2.25em";
       audio.play();

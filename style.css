@@ -1,0 +1,62 @@
+:root {
+  --wine-red: #c7375f;
+  --bright-red: #d42d2f;
+  --light-green: #77a047;
+  --snow: #f0f4f7;
+  --black: #000000;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 3s;
+}
+
+body {
+  background: var(--light-green);
+  height: 100vh;
+}
+
+.container {
+  background: var(--snow);
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 3em;
+  width: min(540px, 80%);
+  min-height: 40vh;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+p {
+  font-size: 45px;
+}
+
+button {
+  padding: 1em 2em;
+  border: none;
+  font-size: 1.2rem;
+  background-color: var(--bright-red);
+  color: var(--snow);
+  border-radius: 999px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--wine-red);
+}
+
+.christmassified {
+  font-family: "Mountains of Christmas", cursive;
+  color: #d42d2f;
+}
